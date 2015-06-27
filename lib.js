@@ -1,4 +1,5 @@
-var exec = require('child_process').exec
+var fs = require('fs')
+  , exec = require('child_process').exec
   , execSync = require('child_process').execSync
   , crypto = require('crypto')
   , utils = require('./utils')

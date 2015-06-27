@@ -8,6 +8,8 @@ describe("lib", function() {
     var url = "http://on.wsj.com/1SRejRP";
     lib.generateScreenshotsFromURL(url, function(err, medias) {
       expect(err).to.not.exist;
+      expect(medias.length).to.equal(2);
+      expect(medias[0].match(/cropped-0.jpg$/)).to.not.be.null;
       console.log("medias: ", medias);
       done();
     });
