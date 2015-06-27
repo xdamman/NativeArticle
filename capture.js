@@ -27,7 +27,7 @@ page.customHeaders = {
 };
 
 page.settings.javascriptEnabled = true;
-page.settings.resourceTimeout = 25000;
+page.settings.resourceTimeout = 20000;
 page.settings.userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4";
 
 page.open(url, function(status) {

@@ -1,0 +1,364 @@
+{ 
+    "created_at": "Sat Jun 27 14:38:29 +0000 2015", 
+    "id": 614805000779247600, 
+    "id_str": "614805000779247617", 
+    "text": "RT @WSJD: Airbnb has raised $1.5 Billion, which values the home-rental service at $25.5 billion: http://t.co/Pvi5jy7ogp http://t.co/KnKYwmc…", 
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+    "truncated": false, 
+    "in_reply_to_status_id": null, 
+    "in_reply_to_status_id_str": null, 
+    "in_reply_to_user_id": null, 
+    "in_reply_to_user_id_str": null, 
+    "in_reply_to_screen_name": null, 
+    "user": { 
+        "id": 2195241, 
+        "id_str": "2195241", 
+        "name": "Farhad Manjoo", 
+        "screen_name": "fmanjoo", 
+        "location": "Palo Alto, CA", 
+        "description": "I write about technology for the New York Times. Anyone can DM me. I prefer DM PR pitches. farhad.manjoo@nytimes.com \nSnapchat: fmanjoo", 
+        "url": null, 
+        "entities": { 
+            "description": { 
+                "urls": [] 
+            } 
+        }, 
+        "protected": false, 
+        "followers_count": 103977, 
+        "friends_count": 2498, 
+        "listed_count": 4058, 
+        "created_at": "Sun Mar 25 18:25:04 +0000 2007", 
+        "favourites_count": 18508, 
+        "utc_offset": -25200, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "geo_enabled": true, 
+        "verified": true, 
+        "statuses_count": 62669, 
+        "lang": "en", 
+        "contributors_enabled": false, 
+        "is_translator": false, 
+        "is_translation_enabled": false, 
+        "profile_background_color": "9AE4E8", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "profile_background_tile": false, 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/591787798379831296/wqE8MJ4m_normal.jpg", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/591787798379831296/wqE8MJ4m_normal.jpg", 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2195241/1396969823", 
+        "profile_link_color": "FF5900", 
+        "profile_sidebar_border_color": "87BC44", 
+        "profile_sidebar_fill_color": "E0FF92", 
+        "profile_text_color": "000000", 
+        "profile_use_background_image": true, 
+        "has_extended_profile": false, 
+        "default_profile": false, 
+        "default_profile_image": false, 
+        "following": false, 
+        "follow_request_sent": false, 
+        "notifications": false 
+    }, 
+    "geo": null, 
+    "coordinates": null, 
+    "place": null, 
+    "contributors": null, 
+    "retweeted_status": { 
+        "created_at": "Sat Jun 27 00:14:29 +0000 2015", 
+        "id": 614587568106152000, 
+        "id_str": "614587568106151937", 
+        "text": "Airbnb has raised $1.5 Billion, which values the home-rental service at $25.5 billion: http://t.co/Pvi5jy7ogp http://t.co/KnKYwmcbke", 
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>", 
+        "truncated": false, 
+        "in_reply_to_status_id": null, 
+        "in_reply_to_status_id_str": null, 
+        "in_reply_to_user_id": null, 
+        "in_reply_to_user_id_str": null, 
+        "in_reply_to_screen_name": null, 
+        "user": { 
+            "id": 28172926, 
+            "id_str": "28172926", 
+            "name": "WSJD", 
+            "screen_name": "WSJD", 
+            "location": "", 
+            "description": "The Wall Street Journal's home for global tech news, analysis, commentary, daily buzz and reviews.", 
+            "url": "http://t.co/G6LDFkS9qB", 
+            "entities": { 
+                "url": { 
+                    "urls": [ 
+                        { 
+                            "url": "http://t.co/G6LDFkS9qB", 
+                            "expanded_url": "http://wsjd.com", 
+                            "display_url": "wsjd.com", 
+                            "indices": [ 
+                                0, 
+                                22 
+                            ] 
+                        } 
+                    ] 
+                }, 
+                "description": { 
+                    "urls": [] 
+                } 
+            }, 
+            "protected": false, 
+            "followers_count": 255852, 
+            "friends_count": 121, 
+            "listed_count": 7304, 
+            "created_at": "Wed Apr 01 19:23:56 +0000 2009", 
+            "favourites_count": 0, 
+            "utc_offset": -14400, 
+            "time_zone": "Eastern Time (US & Canada)", 
+            "geo_enabled": false, 
+            "verified": true, 
+            "statuses_count": 28505, 
+            "lang": "en", 
+            "contributors_enabled": false, 
+            "is_translator": false, 
+            "is_translation_enabled": false, 
+            "profile_background_color": "131516", 
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+            "profile_background_tile": true, 
+            "profile_image_url": "http://pbs.twimg.com/profile_images/421409513455894528/tyj0G4uS_normal.jpeg", 
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/421409513455894528/tyj0G4uS_normal.jpeg", 
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/28172926/1398448737", 
+            "profile_link_color": "0E6FB8", 
+            "profile_sidebar_border_color": "EEEEEE", 
+            "profile_sidebar_fill_color": "EFEFEF", 
+            "profile_text_color": "333333", 
+            "profile_use_background_image": true, 
+            "has_extended_profile": false, 
+            "default_profile": false, 
+            "default_profile_image": false, 
+            "following": false, 
+            "follow_request_sent": false, 
+            "notifications": false 
+        }, 
+        "geo": null, 
+        "coordinates": null, 
+        "place": null, 
+        "contributors": null, 
+        "is_quote_status": false, 
+        "retweet_count": 34, 
+        "favorite_count": 22, 
+        "entities": { 
+            "hashtags": [], 
+            "symbols": [], 
+            "user_mentions": [], 
+            "urls": [ 
+                { 
+                    "url": "http://t.co/Pvi5jy7ogp", 
+                    "expanded_url": "http://on.wsj.com/1SRejRP", 
+                    "display_url": "on.wsj.com/1SRejRP", 
+                    "indices": [ 
+                        87, 
+                        109 
+                    ] 
+                } 
+            ], 
+            "media": [ 
+                { 
+                    "id": 614587557909798900, 
+                    "id_str": "614587557909798912", 
+                    "indices": [ 
+                        110, 
+                        132 
+                    ], 
+                    "media_url": "http://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                    "media_url_https": "https://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                    "url": "http://t.co/KnKYwmcbke", 
+                    "display_url": "pic.twitter.com/KnKYwmcbke", 
+                    "expanded_url": "http://twitter.com/WSJD/status/614587568106151937/photo/1", 
+                    "type": "photo", 
+                    "sizes": { 
+                        "medium": { 
+                            "w": 600, 
+                            "h": 399, 
+                            "resize": "fit" 
+                        }, 
+                        "large": { 
+                            "w": 749, 
+                            "h": 499, 
+                            "resize": "fit" 
+                        }, 
+                        "small": { 
+                            "w": 340, 
+                            "h": 226, 
+                            "resize": "fit" 
+                        }, 
+                        "thumb": { 
+                            "w": 150, 
+                            "h": 150, 
+                            "resize": "crop" 
+                        } 
+                    } 
+                } 
+            ] 
+        }, 
+        "extended_entities": { 
+            "media": [ 
+                { 
+                    "id": 614587557909798900, 
+                    "id_str": "614587557909798912", 
+                    "indices": [ 
+                        110, 
+                        132 
+                    ], 
+                    "media_url": "http://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                    "media_url_https": "https://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                    "url": "http://t.co/KnKYwmcbke", 
+                    "display_url": "pic.twitter.com/KnKYwmcbke", 
+                    "expanded_url": "http://twitter.com/WSJD/status/614587568106151937/photo/1", 
+                    "type": "photo", 
+                    "sizes": { 
+                        "medium": { 
+                            "w": 600, 
+                            "h": 399, 
+                            "resize": "fit" 
+                        }, 
+                        "large": { 
+                            "w": 749, 
+                            "h": 499, 
+                            "resize": "fit" 
+                        }, 
+                        "small": { 
+                            "w": 340, 
+                            "h": 226, 
+                            "resize": "fit" 
+                        }, 
+                        "thumb": { 
+                            "w": 150, 
+                            "h": 150, 
+                            "resize": "crop" 
+                        } 
+                    } 
+                } 
+            ] 
+        }, 
+        "favorited": false, 
+        "retweeted": false, 
+        "possibly_sensitive": false, 
+        "possibly_sensitive_appealable": false, 
+        "lang": "en" 
+    }, 
+    "is_quote_status": false, 
+    "retweet_count": 34, 
+    "favorite_count": 0, 
+    "entities": { 
+        "hashtags": [], 
+        "symbols": [], 
+        "user_mentions": [ 
+            { 
+                "screen_name": "WSJD", 
+                "name": "WSJD", 
+                "id": 28172926, 
+                "id_str": "28172926", 
+                "indices": [ 
+                    3, 
+                    8 
+                ] 
+            } 
+        ], 
+        "urls": [ 
+            { 
+                "url": "http://t.co/Pvi5jy7ogp", 
+                "expanded_url": "http://on.wsj.com/1SRejRP", 
+                "display_url": "on.wsj.com/1SRejRP", 
+                "indices": [ 
+                    97, 
+                    119 
+                ] 
+            } 
+        ], 
+        "media": [ 
+            { 
+                "id": 614587557909798900, 
+                "id_str": "614587557909798912", 
+                "indices": [ 
+                    120, 
+                    140 
+                ], 
+                "media_url": "http://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                "media_url_https": "https://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                "url": "http://t.co/KnKYwmcbke", 
+                "display_url": "pic.twitter.com/KnKYwmcbke", 
+                "expanded_url": "http://twitter.com/WSJD/status/614587568106151937/photo/1", 
+                "type": "photo", 
+                "sizes": { 
+                    "medium": { 
+                        "w": 600, 
+                        "h": 399, 
+                        "resize": "fit" 
+                    }, 
+                    "large": { 
+                        "w": 749, 
+                        "h": 499, 
+                        "resize": "fit" 
+                    }, 
+                    "small": { 
+                        "w": 340, 
+                        "h": 226, 
+                        "resize": "fit" 
+                    }, 
+                    "thumb": { 
+                        "w": 150, 
+                        "h": 150, 
+                        "resize": "crop" 
+                    } 
+                }, 
+                "source_status_id": 614587568106152000, 
+                "source_status_id_str": "614587568106151937", 
+                "source_user_id": 28172926, 
+                "source_user_id_str": "28172926" 
+            } 
+        ] 
+    }, 
+    "extended_entities": { 
+        "media": [ 
+            { 
+                "id": 614587557909798900, 
+                "id_str": "614587557909798912", 
+                "indices": [ 
+                    120, 
+                    140 
+                ], 
+                "media_url": "http://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                "media_url_https": "https://pbs.twimg.com/media/CId0ILCWoAAcK_d.jpg", 
+                "url": "http://t.co/KnKYwmcbke", 
+                "display_url": "pic.twitter.com/KnKYwmcbke", 
+                "expanded_url": "http://twitter.com/WSJD/status/614587568106151937/photo/1", 
+                "type": "photo", 
+                "sizes": { 
+                    "medium": { 
+                        "w": 600, 
+                        "h": 399, 
+                        "resize": "fit" 
+                    }, 
+                    "large": { 
+                        "w": 749, 
+                        "h": 499, 
+                        "resize": "fit" 
+                    }, 
+                    "small": { 
+                        "w": 340, 
+                        "h": 226, 
+                        "resize": "fit" 
+                    }, 
+                    "thumb": { 
+                        "w": 150, 
+                        "h": 150, 
+                        "resize": "crop" 
+                    } 
+                }, 
+                "source_status_id": 614587568106152000, 
+                "source_status_id_str": "614587568106151937", 
+                "source_user_id": 28172926, 
+                "source_user_id_str": "28172926" 
+            } 
+        ] 
+    }, 
+    "favorited": false, 
+    "retweeted": false, 
+    "possibly_sensitive": false, 
+    "possibly_sensitive_appealable": false, 
+    "lang": "en" 
+}
