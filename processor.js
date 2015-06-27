@@ -24,7 +24,6 @@ var sendTweet = function(text, in_reply_to_status_id, media_ids, cb) {
 
   var r = request.post({url:'https://api.twitter.com/1.1/statuses/update.json',oauth:oauthKeys, form: data}, function(err, httpResponse, body) {
     if(httpResponse.statusCode != 200) return console.log("Response: ", body); 
-    console.log("< Twitter: ", body);
     if(cb) cb(err, body.media_id_string);
   });
 
@@ -76,12 +75,12 @@ function processTweet(tweet) {
   if(tweet.text && tweet.text.match(/@NativeArticle/i)) return;
 
   var url = tweet.entities.urls[0].expanded_url;
-  var tweet = "Source: "+url+" via @"+tweet.user.screen_name;
+  var text = "Source: "+url+" via @"+tweet.user.screen_name;
 
   console.log("> Processing url ", url);
 
   lib.generateScreenshotsFromURL(url, function(err, medias) { 
-    sendTweetWithMedias(tweet, tweet.id_str, medias); 
+    sendTweetWithMedias(text, tweet.id_str, medias); 
   });
 };
 
