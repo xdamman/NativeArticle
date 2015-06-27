@@ -69,20 +69,20 @@ var uploadMedia = function(filename, cb) {
 
 var medias = [];
 
-var uploadMedias = function(url, medias, cb) {
+var sendTweetWithMedias = function(tweet, in_reply_to_status_id, medias, cb) {
 
   if(medias.length == 0) return;
   
   console.log("Uploading ", medias);
 
   async.map(medias, uploadMedia, function(err, media_ids) {
-    sendTweet(url, null, media_ids);
+    sendTweet(tweet, in_reply_to_status_id, media_ids);
     if(cb) cb(err);
   });
 
 }
 
-var processUrl = function(url) {
+var processUrl = function(url, source) {
 
   console.log("> Processing url ", url);
   var path = __dirname + "/screenshots/"+md5(url);
@@ -95,7 +95,7 @@ var processUrl = function(url) {
       for(var i in medias) {
         medias[i] = path + "/"+medias[i];
       }
-      uploadMedias(url, medias, function(err) {
+      sendTweetWithMedias("Source: "+url+" from @"+source.username, source.in_reply_to_status_id, medias, function(err) {
         console.log("> Removing "+path);
         exec("rm -rf "+path);
       });
@@ -116,7 +116,7 @@ function processTweet(tweet) {
 
   var url = tweet.entities.urls[0].expanded_url;
 
-  processUrl(url);
+  processUrl(url, { username: tweet.user.screen_name, in_reply_to_status_id: tweet.id_str }); 
 
 };
 
