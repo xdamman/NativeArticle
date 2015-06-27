@@ -6,6 +6,7 @@ var fs = require('fs')
   , async = require('async')
   , twitter = require('twitter')
   , settings = require('./settings.json')
+  , utils = require('./utils')
   ;
 
 /*
@@ -84,12 +85,14 @@ var sendTweetWithMedias = function(tweet, in_reply_to_status_id, medias, cb) {
 
 var processUrl = function(url, source) {
 
+  var format = (utils.getOrientation(url) == "portrait") ? "375x667" : "667x375";
+
   console.log("> Processing url ", url);
   var path = __dirname + "/screenshots/"+md5(url);
   var filename = path + "/full.jpg";
   execSync("mkdir -p "+path);
   exec("node_modules/.bin/phantomjs --ignore-ssl-errors=yes capture.js "+url+" "+filename, function(err, stdout, stderr) {
-    exec("gm convert -crop 375x667 "+filename+" +adjoin "+path+"/cropped-%01d.jpg", function(err, stdout, stderr) {
+    exec("gm convert -crop "+format+" "+filename+" +adjoin "+path+"/cropped-%01d.jpg", function(err, stdout, stderr) {
       var files = fs.readdirSync(path);
       var medias = files.slice(0,2);
       for(var i in medias) {
