@@ -95,7 +95,7 @@ var processUrl = function(url, source) {
       for(var i in medias) {
         medias[i] = path + "/"+medias[i];
       }
-      sendTweetWithMedias("Source: "+url+" from @"+source.username, source.in_reply_to_status_id, medias, function(err) {
+      sendTweetWithMedias("Source: "+url+" via @"+source.username, source.in_reply_to_status_id, medias, function(err) {
         console.log("> Removing "+path);
         exec("rm -rf "+path);
       });
