@@ -13,13 +13,15 @@ if (system.args.length != 3) {
 var page = require('webpage').create();
 //viewportSize being the actual size of the headless browser
 
+var numberOfScreens = 3;
+
 if(utils.getOrientation(url) == "portrait") {
   page.viewportSize = { width: 375, height: 667 };
-  page.clipRect = { top: 0, left: 0, width: 375, height: 1334 };
+  page.clipRect = { top: 0, left: 0, width: 375, height: 667 * numberOfScreens };
 }
 else {
   page.viewportSize = { width: 667, height: 375 };
-  page.clipRect = { top: 0, left: 0, width: 667, height: 750 };
+  page.clipRect = { top: 0, left: 0, width: 667, height: 375 * numberOfScreens };
 }
 
 page.customHeaders = {
