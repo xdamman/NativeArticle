@@ -5,8 +5,15 @@ var utils = {
   },
 
   getOrientation: function(url) {
-    if(this.domain(url) == 'news.ycombinator.com') return 'landscape';
-    return 'portrait';
+    switch(this.domain(url)) {
+      case 'news.ycombinator.com':
+      case 'www.reddit.com':
+        return 'landscape';
+        break;
+
+      default: 
+        return 'portrait';
+    }
   }
 };
 
