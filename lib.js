@@ -14,7 +14,7 @@ var lib = {
   generateScreenshotsFromURL: function(url, cb) {
 
     var format = (utils.getOrientation(url) == "portrait") ? "375x667" : "667x375";
-    var path = __dirname + "/screenshots/"+lib.md5(url);
+    var path = "/tmp/NativeArticle/"+lib.md5(url);
     var filename = path + "/full.png";
 
     var captureCommand = "node_modules/.bin/phantomjs --ignore-ssl-errors=yes capture.js "+url+" "+filename;
