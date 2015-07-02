@@ -47,11 +47,12 @@ var lib = {
       console.log("generateScreenshotsFromURL> running crop command: "+cropCommand);
       exec(cropCommand, function(err, stdout, stderr) {
         var files = fs.readdirSync(path);
+        var medias = [];
         console.log("generateScreenshotsFromURL> screenshot cropped in ", files);
-        var medias = files.slice(0,-1);
-        for(var i in medias) {
-          medias[i] = path + "/"+medias[i];
+        for(var i=0;i<Math.min(4,files.length-1);i++) {
+          medias.push(path + "/"+files[i]);
         }
+        console.log("medias:",medias);
         if(cb) cb(err, medias);
       });
     });
