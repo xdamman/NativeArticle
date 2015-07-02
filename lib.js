@@ -34,7 +34,7 @@ var lib = {
       exec(cropCommand, function(err, stdout, stderr) {
         var files = fs.readdirSync(path);
         console.log("generateScreenshotsFromURL> screenshot cropped in ", files);
-        var medias = files.slice(0,2);
+        var medias = files.splice(1);
         for(var i in medias) {
           medias[i] = path + "/"+medias[i];
         }
