@@ -34,6 +34,15 @@ page.settings.userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS 
 
 page.open(url, function(status) {
 
+  var hasHorizontalScrollbar = page.evaluate(function() {
+    return (document.width > window.innerWidth);
+  });
+
+  if(hasHorizontalScrollbar) {
+    page.viewportSize = { width: 667, height: 375 };
+    page.clipRect = { top: 0, left: 0, width: 667, height: 375 * numberOfScreens };
+  }
+
   page.render(filename);
   phantom.exit();
 
