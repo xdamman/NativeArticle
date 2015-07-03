@@ -20,7 +20,7 @@ var sendTweet = function(text, in_reply_to_status_id, media_ids, cb) {
     , media_ids: media_ids.join(',')
   };
 
-  console.log("Submitting", data);
+  console.log("processor> Sending tweet: ", data);
 
   var r = request.post({url:'https://api.twitter.com/1.1/statuses/update.json',oauth:oauthKeys, form: data}, function(err, httpResponse, body) {
     if(httpResponse.statusCode != 200) return console.log("Response: ", body); 
@@ -50,7 +50,7 @@ var sendTweetWithMedias = function(tweet, in_reply_to_status_id, medias, cb) {
 
   if(medias.length == 0) return;
   
-  console.log("Uploading ", medias);
+  console.log("processor> Uploading ", medias);
 
   async.map(medias, uploadMedia, function(err, media_ids) {
     sendTweet(tweet, in_reply_to_status_id, media_ids);
@@ -77,7 +77,7 @@ function processTweet(tweet) {
   var url = tweet.entities.urls[0].expanded_url;
   var text = "@"+tweet.user.screen_name+" here is a mobile optimized preview of "+url;
 
-  console.log("> Processing url ", url);
+  console.log("processor> Processing url ", url);
 
   lib.generateScreenshotsFromURL(url, function(err, medias) { 
     sendTweetWithMedias(text, tweet.id_str, medias); 
