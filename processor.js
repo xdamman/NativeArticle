@@ -75,7 +75,7 @@ function processTweet(tweet) {
   if(tweet.text && tweet.text.match(/@NativeArticle/i)) return;
 
   var url = tweet.entities.urls[0].expanded_url;
-  var text = "Source: "+url+" via @"+tweet.user.screen_name;
+  var text = "@"+tweet.user.screen_name+" here is a mobile optimized preview of "+url;
 
   console.log("> Processing url ", url);
 
